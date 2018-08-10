@@ -1,0 +1,48 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textIsSelectable="true"
+    tools:context="com.example.sandarumk.bakingapp.fragments.RecipeStepDetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/step_detail_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/view_player"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_player_height"
+                android:background="@android:color/black"
+                app:resize_mode="fit" />
+
+            <ImageView
+                android:id="@+id/image_full_screen"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/fullscreen_button"
+                android:src="@drawable/ic_fullscreen_expand" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/recipestep_detail"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/padding_large"
+            android:textIsSelectable="true" />
+    </LinearLayout>
+
+
+</ScrollView>

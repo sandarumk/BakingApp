@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_large">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="@dimen/text_large"
+        tools:text="Graham Cracker crumbs" />
+
+    <TextView
+        android:id="@+id/tv_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="@dimen/margin_extra_large"
+        android:layout_marginStart="@dimen/margin_extra_large"
+        android:textAppearance="?attr/textAppearanceListItem"
+        tools:text="2" />
+
+
+    <TextView
+        android:id="@+id/tv_measure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/tv_quantity"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_toEndOf="@id/tv_quantity"
+        android:layout_toRightOf="@id/tv_quantity"
+        android:textAppearance="?attr/textAppearanceListItem"
+        tools:text="CUP" />
+</RelativeLayout>

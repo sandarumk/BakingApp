@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_ingredient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_large"
+        android:layout_marginLeft="@dimen/margin_extra_large"
+        android:layout_marginRight="@dimen/margin_extra_large"
+        android:layout_marginTop="@dimen/margin_large"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:text="@string/recipe_ingredients" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recipestep_list"
+        android:name="com.example.sandarumk.bakingapp.RecipeStepListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_ingredient"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:context="com.example.sandarumk.bakingapp.activities.RecipeStepListActivity"
+        tools:listitem="@layout/recipestep_list_content" />
+
+</RelativeLayout>

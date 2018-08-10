@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/margin_large"
+    android:layout_marginStart="@dimen/margin_large"
+    android:baselineAligned="false"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    tools:context="com.example.sandarumk.bakingapp.activities.RecipeStepListActivity">
+
+    <!--
+    This layout is a two-pane layout for the RecipeSteps
+    master/detail flow.
+    
+    -->
+
+    <RelativeLayout
+        android:layout_width="@dimen/item_width"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_ingredient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:layout_marginLeft="@dimen/margin_extra_large"
+            android:layout_marginRight="@dimen/margin_extra_large"
+            android:layout_marginTop="@dimen/margin_large"
+            android:text="@string/recipe_ingredients"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/recipestep_list"
+            android:name="com.example.sandarumk.bakingapp.RecipeStepListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_ingredient"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            tools:context="com.example.sandarumk.bakingapp.activities.RecipeStepListActivity"
+            tools:listitem="@layout/recipestep_list_content" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/recipe_step_detail_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3" />
+
+</LinearLayout>

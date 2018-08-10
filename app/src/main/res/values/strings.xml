@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Baking Time</string>
+    <string name="title_recipestep_list">Recipe Steps</string>
+    <string name="title_recipestep_detail">Recipe Steps</string>
+    <string name="recipe_not_found">Recipe not found</string>
+    <string name="title_activity_recipe_ingredient">Recipe Ingredients</string>
+    <string name="action_settings">Settings</string>
+    <string name="recipe_ingredients">Recipe Ingredients</string>
+    <string name="ingredients_not_found">Ingredients not found</string>
+    <string name="todays_recipes">Today recipes</string>
+    <string name="no_recipes">No recipes</string>
+    <string name="fullscreen_button">fullscreen button</string>
+    <string name="recipe_background_image">recipe background image</string>
+    <string name="steps_not_found">Steps not found</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recipe_ingredient_list"
+    android:name="com.example.sandarumk.bakingapp.RecipeStepListFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/tv_ingredient"
+    android:layout_marginLeft="@dimen/margin_large"
+    android:layout_marginRight="@dimen/margin_large"
+    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+    tools:context=".fragments.RecipeIngredientFragment"
+    tools:listitem="@layout/recipe_ingredient_list_content"
+    tools:showIn="@layout/activity_recipe_ingredient" />

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">200dp</dimen>
+    <dimen name="item_width">200dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="view_player_height">250dp</dimen>
+
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_medium">8dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_extra_large">32dp</dimen>
+
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+
+    <dimen name="card_radius">4dp</dimen>
+    <dimen name="button_size">32dp</dimen>
+    <dimen name="widget_min_height">180dp</dimen>
+    <dimen name="widget_min_width">278dp</dimen>
+    <dimen name="card_height">160dp</dimen>
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_medium">18sp</dimen>
+    <dimen name="text_huge">56sp</dimen>
+
+
+</resources>
